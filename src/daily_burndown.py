@@ -26,8 +26,8 @@ def main():
 
     plt.figure(facecolor='#A9A9A9')
     plt.axes(facecolor='k')
-    plt.axhline(0, 0, 1000, color='w')
-    plt.axvline(0, 0, 53, color='w')
+    plt.axhline(0, 0, target, color='w')
+    plt.axvline(0, 0, period, color='w')
     plt.title('200 km Burn Down for June')
     plt.plot(week_target)
     plt.plot(week_actual)
