@@ -8,7 +8,7 @@ period = 31
 
 
 def read_personal_data():
-    daily_data = pandas.read_csv('../resources/data_202007.csv')
+    daily_data = pandas.read_csv('../../resources/run/data_2020/data_202007.csv')
     return daily_data['km']
 
 

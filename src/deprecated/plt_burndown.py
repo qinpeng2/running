@@ -3,7 +3,7 @@ import pandas
 
 
 def read_personal_data():
-    week_data = pandas.read_csv('../resources/run/annual/data_2020.csv')
+    week_data = pandas.read_csv('../../resources/run/annual/data_2020.csv')
     return week_data['km']
 
 
