@@ -22,14 +22,15 @@ class Burndown(object):
 
         left = self.__target
         # __target list
-        for i in range(self.__periods):
-            current_target = round(self.__target - self.__target / (self.__periods - 1) * i, 2)
+        for i in range(self.__periods + 1):
+            current_target = round(self.__target - self.__target / (self.__periods) * i, 2)
             period_targets.append(current_target if current_target > left else left)
             left = left - current_target
         # actual list
         personal_data = self.read_personal_data()
 
         total_km = 0
+        period_actual.append(self.__target)
         for km in personal_data:
             km = str(km).strip()
             if km == '':
