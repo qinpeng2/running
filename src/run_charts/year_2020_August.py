@@ -11,5 +11,5 @@ class Year2020August(Burndown):
 
 
 if __name__ == '__main__':
-    burn_down = Year2020August(target=200, periods=31, title='200 km Burn Down for August', xlabel = 'Burn Down by Day.', ylabel='GOAL for 200km')
+    burn_down = Year2020August(target=160, periods=31, title='200 km Burn Down for August', xlabel = 'Burn Down by Day.', ylabel='GOAL for 200km')
     burn_down.chart()
